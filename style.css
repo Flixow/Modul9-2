@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans Condensed";
+  margin: 0;
+  background: #fff;
+  font-size: 18px;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+body p {
+  font-size: 22px;
+}
+
+.pick-button {
+  visibility: hidden;
+}
