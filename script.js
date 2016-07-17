@@ -1,7 +1,6 @@
 "use strict";
 
 $(function(){
-
 	var carouselList = $("#carousel ul");
 	var currentIndex = 0;
 	var previousIndex = -1;
@@ -26,16 +25,15 @@ $(function(){
 		if (currentIndex < 0) currentIndex = 3;
 		applyClass();
 	}
+
 	var interval = setInterval(changeSlide, 3000);
 
 	function moveFirstSlide() {
-
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");
 
 		lastItem.after(firstItem)
 		carouselList.css({marginLeft:0});
-
 	}
 
 	function applyClass() {
@@ -45,9 +43,6 @@ $(function(){
 
 	$(".control").click(function(el){
 		var direction = el.target.id;
-
-
-
 		changeSlide(direction);
 	});
 
@@ -59,7 +54,5 @@ $(function(){
 		for (var i = 0; i < Math.abs(times); i++) {
 			changeSlide(direction, 100);
 		}
-
 	})
-
 });
